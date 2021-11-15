@@ -1,0 +1,21 @@
+/*
+ Это точка входа для всех стилей.
+ Подключите сюда все файлы, которые
+ должны быть на странице.
+*/
+
+@import "font-face";
+@import "variables";
+@import "mixin";
+@import "global";
+
+@import "blocks/visually-hidden";
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/tabs";
+@import "blocks/product_card";
+@import "blocks/banners";
+@import "blocks/filter";
+@import "blocks/product";
+@import "blocks/allstyles";

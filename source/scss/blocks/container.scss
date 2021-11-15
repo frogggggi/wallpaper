@@ -1,0 +1,29 @@
+.container {
+  margin: 0 auto;
+  width: $sm;
+  padding: 0 20px;
+  &.fillwidth {
+    max-width: 100%;
+  }
+  @media screen and (min-width: $md) {
+    width: $md;
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  @media screen and (min-width: $xl) {
+    width: $xl;
+    padding: 0 20px;
+  }
+  @media screen and (min-width: $xxl) {
+    width: $xxl;
+    padding: 0 20px;
+  }
+}
+
+.wrapper {
+  max-width: 100%;
+  &.fixed {
+    height: 100vh;
+    overflow: hidden;
+  }
+}

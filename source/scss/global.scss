@@ -1,0 +1,524 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 3.5rem = 35px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $white;
+  font-family: $font-body;
+  font-size: 1.6rem;
+  color: $text;
+  font-weight: normal;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: $main;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+ol {
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1,h2,h3,h4,.title {
+  font-family: $font-heading;
+  font-size: 4.4rem;
+  font-weight: 400;
+}
+
+p {
+  margin: 0;
+}
+
+.fill img {
+  object-fit: fill;
+}
+
+section {
+  overflow: hidden;
+}
+
+pre {
+  overflow-x: auto;
+  font-size: 16px;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid rgb(204, 89, 6);
+  background-color: #252525;
+  color: rgba(255, 255, 255, 0.7);
+  border-radius: 15px 0 15px 0;
+}
+
+.img__thumb {
+  position: relative;
+  padding-top: 62.57%;
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.resize_img {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 35%;
+  img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: auto;
+  }
+}
+
+
+/* not here */
+:root {
+  --swiper-navigation-size: 30px;
+  --lightgray: #efefef;
+  --blue: steelblue;
+  --white: #fff;
+  --black: rgba(0, 0, 0, 0.8);
+  --bounceEasing: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+}
+
+.swiper {
+  position: relative;
+}
+.swiper-button-next {
+  right: 20px;
+  z-index: 1;
+  .icon-arrow {
+    font-size: 20px;
+  }
+}
+.swiper-button-prev {
+  left: 20px;
+  z-index: 1;
+  .icon-arrow {
+    font-size: 20px;
+  }
+}
+/* not here */
+
+
+.responze {
+  display: block;
+  max-width: 100%;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn {
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  &_purple {
+    background: $main;
+    color: $white;
+    &:hover {
+      background: #BC1E77;
+    }
+    &:focus {
+      background: $main2;
+    }
+  }
+  &_empty {
+    background: 0;
+    border: 1px solid #CE80AC;
+    color: $main;
+    &:hover {
+      background: #BC1E77;
+      border: 0;
+      color: $white;
+    }
+    &:focus {
+      background: $main2;
+      border: 0;
+      color: $white;
+    }
+  }
+
+  &_green {
+    background: 0;
+    color: $white;
+    &:hover {}
+    &:focus {}
+  }
+  &_dgreen {
+    background: 0;
+    color: $white;
+    &:hover {}
+    &:focus {}
+  }
+  &_white {
+    background: $white;
+    border: 1px solid #CE80AC;
+    color: $main;
+    &:hover {
+      background: #BC1E77;
+      border: 0;
+      color: $white;
+    }
+    &:focus {
+      background: $main2;
+      border: 0;
+      color: $white;
+    }
+  }
+  &_red {
+    background: $red;
+    color: $white;
+    &:hover {}
+    &:focus {}
+  }
+}
+
+main{
+
+}
+
+
+
+/* modal */
+.modalny {
+  display: none;
+}
+/* modal */
+
+
+
+// ARTICLE  section
+
+
+/* MODAL
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+  --lightgray: #efefef;
+  --blue: steelblue;
+  --white: #fff;
+  --black: rgba(0, 0, 0, 0.8);
+  --bounceEasing: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+}
+
+.modalny {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: #23232fbf;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  overflow: auto;
+  z-index: 99;
+  .form_wrapper {
+    padding: 30px;
+    background-color: rgb(249, 249, 249);
+    box-shadow: 0 12px 67px #0000008f;
+    border-radius: 10px;
+  }
+  .form_input {
+    font-weight: 400;
+    border: 0;
+    height: 40px;
+    font-size: 16px;
+    line-height: 170%;
+    color: #686868;
+    width: 100%;
+    outline: none;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px 0 #0000001a;
+    padding: 15px;
+    &::placeholder {
+      color: #6868688a;
+    }
+  }
+  .form_textarea {
+    font-weight: 400;
+    border: 0;
+    font-size: 16px;
+    line-height: 170%;
+    color: #686868;
+    width: 100%;
+    outline: none;
+    margin-bottom: 15px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px 0 #0000001a;
+    padding: 15px;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 200px;
+    &::placeholder {
+      color: #6868688a;
+    }
+  }
+  .form_btn {
+    height: 40px;
+    margin-top: 20px;
+    max-width: 160px;
+  }
+  .form_title {
+    color: rgb(104, 104, 104);
+    font-size: 32px;
+    text-align: left;
+    text-shadow: 0 0 0 #0202023b;
+  }
+}
+
+.openform {
+  .form_wrapper {
+    padding: 30px;
+    background-color: rgb(249, 249, 249);
+    border-radius: 10px;
+    &.pink_form {
+      background: #fcedf2;
+    }
+    &.blue_form {
+      background: #a0e1ff;
+    }
+  }
+  .form_title {
+    margin-bottom: 35px;
+  }
+  .form_input {
+    font-weight: 400;
+    border: 0;
+    height: 40px;
+    font-size: 16px;
+    line-height: 170%;
+    color: #686868;
+    width: 100%;
+    outline: none;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px 0 #0000001a;
+    padding: 15px;
+    &::placeholder {
+      color: #6868688a;
+    }
+  }
+  .form_textarea {
+    font-weight: 400;
+    border: 0;
+    font-size: 16px;
+    line-height: 170%;
+    color: #686868;
+    width: 100%;
+    outline: none;
+    margin-bottom: 15px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px 0 #0000001a;
+    padding: 15px;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 200px;
+    &::placeholder {
+      color: #6868688a;
+    }
+  }
+  .form_btn {
+    height: 40px;
+    margin-top: 20px;
+    max-width: 160px;
+  }
+  .form_title {
+    color: rgb(104, 104, 104);
+    font-size: 32px;
+    text-align: left;
+    text-shadow: 0 0 0 #0202023b;
+  }
+
+}
+
+.form_container label{
+  display: flex;
+  flex-wrap: wrap;
+  user-select: none;
+  & > span {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+  }
+
+}
+
+
+
+#thanksbox{
+  .form_wrapper {
+    padding: 35px 50px;
+  }
+  .icon-accepted {
+    font-size: 60px;
+    filter: drop-shadow(2px 2px 24px #5B9DFF);
+    margin: 0 auto 15px;
+  }
+  .modal-dialog {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+.is-visible {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.35s ease-in-out;
+}
+
+.modal-dialog {
+  position: relative;
+  max-width: 800px;
+  max-height: 80vh;
+  border-radius: 5px;
+  //overflow: auto;
+  cursor: default;
+}
+
+.close-modal {
+  font-size: 2rem;
+  background: 0;
+  border: 0;
+  color: #fff;
+  right: -10px;
+  position: absolute;
+  top: -40px;
+  cursor: pointer;
+}
+
+.modal_workbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.workbox-img {
+  max-width: 600px;
+  margin-right: 6.5rem;
+  border-radius: 10px;
+  background: $white;
+  filter: drop-shadow(12px 12px 34px rgba(0, 0, 0, 0.12));
+  & > img {
+    border-radius: 10px;
+  }
+}
+.workbox_info {
+  max-width: 505px;
+  width: 100%;
+  color: $white;
+  .reviews_work {
+    color: $white;
+  }
+  .reviews_descr {
+    color: $white;
+    font-weight: 500;
+  }
+  .reviews_lt > span {
+    color: $white;
+  }
+}
+
+
+#modal1{
+  .modal-dialog {
+    max-width: 600px;
+  }
+  .form_title {
+    text-align: left;
+    height: 73px;
+  }
+}
+#modal2 {
+  .modal-dialog {
+    max-width: 600px;
+  }
+  .form_title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 155%;
+  }
+}
+
+.modalWorkInfo {
+  text-align: left;
+  .modal-dialog {
+    max-width: 1170px;
+  }
+  .close-modal {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 155%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    right: 0;
+    top: 0;
+    padding: 0;
+  }
+  .icon-close {
+    font-size: 32px;
+    margin-left: 15px;
+    color: $white;
+  }
+
+}

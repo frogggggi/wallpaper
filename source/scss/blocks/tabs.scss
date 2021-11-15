@@ -1,0 +1,157 @@
+.tabs {
+  position: relative;
+}
+
+.tabs__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+}
+.tabs__item {
+  flex: 1;
+}
+.tabs__item:not(:first-child) .tabs__btn{
+  padding-left: 13px;
+}
+
+.tabs__btn {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  border: 0;
+  background: 0;
+  padding: 0;
+  outline: none;
+  width: 100%;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #E5E5E5;
+  box-sizing: border-box;
+  text-align: left;
+  cursor: pointer;
+}
+
+.tabs__btn:hover {
+
+}
+
+.tabs__btn--active {
+  font-weight: bold;
+  color: $main;
+  border-bottom: 2px solid $main;
+  pointer-events: none;
+}
+
+.tabs__content {
+  display: none;
+  background-color: #fff;
+}
+
+.tabs__content--active {
+  display: block;
+}
+
+.content {
+  padding: 40px 60px;
+  width: 796px;
+}
+
+.content__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--color-dark);
+}
+
+.content__descr {
+  margin: 0;
+  margin-bottom: 59px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $black;
+}
+
+.content__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content__link {
+  padding: 14px;
+  width: 200px;
+  height: 120px;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #ebecf3;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.content__text {
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #a2a6c0;
+}
+
+.tabs__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  border: none;
+  background-color: $peach;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.tabs__arrow svg {
+  pointer-events: none;
+  fill: #fff;
+  transition: fill 0.3s ease-in-out;
+}
+
+.tabs__arrow:hover {
+  background-color: #fff;
+}
+
+.tabs__arrow:hover svg {
+  fill: $peach;
+}
+
+.tabs__arrow--next {
+  right: -204px;
+}
+
+.tabs__arrow--prev {
+  left: -204px;
+}
+
+
+.placedata {
+  .tabs {}
+  .tabs__list {}
+  .tabs__item {}
+  .tabs__btn {
+    &.tabs__btn--active {
+
+    }
+  }
+}

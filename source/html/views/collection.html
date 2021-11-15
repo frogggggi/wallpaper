@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="HTML5 webpack boilerplate" />
+    <title>HTML5 webpack boilerplate</title>
+    <link rel="stylesheet" href="/vendors/normalize-css/normalize.min.css" />
+    <link rel="stylesheet" href="/vendors/icomoon/style.css" />
+    <script>
+        if (!window.HTMLPictureElement) {
+            document.createElement('picture');
+        }
+    </script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body class="collection-page">
+<div class="wrapper nocontent">
+    <!--header.html-->
+    <%= _.template(require('../includes/common/header.html').default)({version: htmlWebpackPlugin.options.custom.version,}) %>
+    <main class='main_content'>
+        <%= _.template(require('../includes/common/breadcrumbs.html').default)({}) %>
+        <section class="collection-section">
+            <div class="container">
+                <h1 class="collection-section-title title">Коллекция обоев Amsterdam mood</h1>
+                <h2 class="collection-subtitle">Обои Amsterdam mood в интерьере</h2>
+                <div class="collection-slider_wrapper">
+                    <div class="swiper collectionSwiper collection__js" >
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="img__thumb">
+                                    <img src="/img/col_1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img__thumb">
+                                    <img src="/img/col_2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img__thumb">
+                                    <img src="/img/col_3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img__thumb">
+                                    <img src="/img/col_4.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="img__thumb">
+                                    <img src="/img/col_2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offers-button-prev"><span class="icon-arrow_circle"><span class="path1"></span><span class="path2"></span></span></div>
+                    <div class="offers-button-next"><span class="icon-arrow_circle"><span class="path1"></span><span class="path2"></span></span></div>
+                </div>
+            </div>
+        </section>
+        <section class="collitems-section">
+            <div class="container">
+                <div class="collitems-sortwrapper">
+                    <div class="collitems-total">
+                        Показано Товаров <span class="collitems-total-count">(1924)</span>
+                    </div>
+                    <div class="collitems-sortbox">
+                        <div class="collitems-sort-label">Сортировать по</div>
+                        <div class="collitems-sort">
+                            <select name="" id="">
+                                <option value="">Популярности</option>
+                                <option value="">Цена по убыванию</option>
+                                <option value="">Цена по воздрастанию</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="collitems__wrapper">
+                    <div class="collitems__list" itemtype="https://schema.org/ItemList" itemscope>
+                        <div class="collitems__item">
+                            <article class="box__type-3 offers__item" itemtype="https://schema.org/Product" itemprop="itemListElement" itemscope>
+                                <div class="product__wrapper">
+                                    <div class="product__stat sale">Sale</div>
+                                    <div class="product__label"><img src="/img/check_green.svg" alt="Складская программа">Складская программа</div>
+                                    <a href="/category/product.html" class="product__img img__thumb">
+                                        <img src="/img/product_1.jpg" alt="">
+                                    </a>
+                                    <div class="product__action">
+                                        <div class="product__action-box">
+                                            <div class="nav_favorite">
+                                                <a class="nav_favorite__link" href="#"><span class="icon-heart"></span></a>
+                                            </div>
+                                            <div class="nav_cart">
+                                                <a class="nav_cart__link" href="#"><span class="icon-shopping-bag"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="btn product__action-btn addToCart">Купить</div>
+                                    </div>
+                                </div>
+                                <div class="product__info">
+                                    <meta itemprop="image" content="/image/product.png">
+                                    <h3 itemprop="name">
+                                        <a href="/category/product.html" itemprop="url">Обои Galerie Metallic FX W78228</a>
+                                    </h3>
+                                    <div class="product-price" itemtype="https://schema.org/Offer" itemprop="offers" itemscope>
+                                        <span class="PricesalesPrice">$13.20</span>
+                                        <span class="PricesalesOldPrice">$56.20</span>
+                                        <meta itemprop="price" content="13.20">
+                                        <meta itemprop="priceCurrency" content="USD">
+                                    </div>
+                                    <div class="product_s_params">
+                                        <div class="product_s_params-item">
+                                            <span class="icon-maximize"></span>
+                                            <div class="product_s_params-value">053 х 10м</div>
+                                        </div>
+                                        <div class="product_s_params-item">
+                                            <span class="icon-membrane"></span>
+                                            <div class="product_s_params-value">Виниловые обои флизелиновая основа</div>
+                                        </div>
+                                    </div>
+                                    <div class="product_s_desc" itemprop="description">
+                                        <p>Краткое описание товара</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="collitems__item">
+                            <article class="box__type-3 offers__item" itemtype="https://schema.org/Product" itemprop="itemListElement" itemscope>
+                                <div class="product__wrapper">
+                                    <div class="product__stat sale">Sale</div>
+                                    <div class="product__label"><img src="/img/check_green.svg" alt="Складская программа">Складская программа</div>
+                                    <a href="/category/product.html" class="product__img img__thumb">
+                                        <img src="/img/product_1.jpg" alt="">
+                                    </a>
+                                    <div class="product__action">
+                                        <div class="product__action-box">
+                                            <div class="nav_favorite">
+                                                <a class="nav_favorite__link" href="#"><span class="icon-heart"></span></a>
+                                            </div>
+                                            <div class="nav_cart">
+                                                <a class="nav_cart__link" href="#"><span class="icon-shopping-bag"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="btn product__action-btn addToCart">Купить</div>
+                                    </div>
+                                </div>
+                                <div class="product__info">
+                                    <meta itemprop="image" content="/image/product.png">
+                                    <h3 itemprop="name">
+                                        <a href="/category/product.html" itemprop="url">Обои Galerie Metallic FX W78228</a>
+                                    </h3>
+                                    <div class="product-price" itemtype="https://schema.org/Offer" itemprop="offers" itemscope>
+                                        <span class="PricesalesPrice">$13.20</span>
+                                        <span class="PricesalesOldPrice">$56.20</span>
+                                        <meta itemprop="price" content="13.20">
+                                        <meta itemprop="priceCurrency" content="USD">
+                                    </div>
+                                    <div class="product_s_params">
+                                        <div class="product_s_params-item">
+                                            <span class="icon-maximize"></span>
+                                            <div class="product_s_params-value">053 х 10м</div>
+                                        </div>
+                                        <div class="product_s_params-item">
+                                            <span class="icon-membrane"></span>
+                                            <div class="product_s_params-value">Виниловые обои флизелиновая основа</div>
+                                        </div>
+                                    </div>
+                                    <div class="product_s_desc" itemprop="description">
+                                        <p>Краткое описание товара</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="collitems__item">
+                            <article class="box__type-3 offers__item" itemtype="https://schema.org/Product" itemprop="itemListElement" itemscope>
+                                <div class="product__wrapper">
+                                    <div class="product__stat sale">Sale</div>
+                                    <div class="product__label"><img src="/img/check_green.svg" alt="Складская программа">Складская программа</div>
+                                    <a href="/category/product.html" class="product__img img__thumb">
+                                        <img src="/img/product_1.jpg" alt="">
+                                    </a>
+                                    <div class="product__action">
+                                        <div class="product__action-box">
+                                            <div class="nav_favorite">
+                                                <a class="nav_favorite__link" href="#"><span class="icon-heart"></span></a>
+                                            </div>
+                                            <div class="nav_cart">
+                                                <a class="nav_cart__link" href="#"><span class="icon-shopping-bag"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="btn product__action-btn addToCart">Купить</div>
+                                    </div>
+                                </div>
+                                <div class="product__info">
+                                    <meta itemprop="image" content="/image/product.png">
+                                    <h3 itemprop="name">
+                                        <a href="/category/product.html" itemprop="url">Обои Galerie Metallic FX W78228</a>
+                                    </h3>
+                                    <div class="product-price" itemtype="https://schema.org/Offer" itemprop="offers" itemscope>
+                                        <span class="PricesalesPrice">$13.20</span>
+                                        <span class="PricesalesOldPrice">$56.20</span>
+                                        <meta itemprop="price" content="13.20">
+                                        <meta itemprop="priceCurrency" content="USD">
+                                    </div>
+                                    <div class="product_s_params">
+                                        <div class="product_s_params-item">
+                                            <span class="icon-maximize"></span>
+                                            <div class="product_s_params-value">053 х 10м</div>
+                                        </div>
+                                        <div class="product_s_params-item">
+                                            <span class="icon-membrane"></span>
+                                            <div class="product_s_params-value">Виниловые обои флизелиновая основа</div>
+                                        </div>
+                                    </div>
+                                    <div class="product_s_desc" itemprop="description">
+                                        <p>Краткое описание товара</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="collitems__item">
+                            <article class="box__type-3 offers__item" itemtype="https://schema.org/Product" itemprop="itemListElement" itemscope>
+                                <div class="product__wrapper">
+                                    <div class="product__stat sale">Sale</div>
+                                    <div class="product__label"><img src="/img/check_green.svg" alt="Складская программа">Складская программа</div>
+                                    <a href="/category/product.html" class="product__img img__thumb">
+                                        <img src="/img/product_1.jpg" alt="">
+                                    </a>
+                                    <div class="product__action">
+                                        <div class="product__action-box">
+                                            <div class="nav_favorite">
+                                                <a class="nav_favorite__link" href="#"><span class="icon-heart"></span></a>
+                                            </div>
+                                            <div class="nav_cart">
+                                                <a class="nav_cart__link" href="#"><span class="icon-shopping-bag"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="btn product__action-btn addToCart">Купить</div>
+                                    </div>
+                                </div>
+                                <div class="product__info">
+                                    <meta itemprop="image" content="/image/product.png">
+                                    <h3 itemprop="name">
+                                        <a href="/category/product.html" itemprop="url">Обои Galerie Metallic FX W78228</a>
+                                    </h3>
+                                    <div class="product-price" itemtype="https://schema.org/Offer" itemprop="offers" itemscope>
+                                        <span class="PricesalesPrice">$13.20</span>
+                                        <span class="PricesalesOldPrice">$56.20</span>
+                                        <meta itemprop="price" content="13.20">
+                                        <meta itemprop="priceCurrency" content="USD">
+                                    </div>
+                                    <div class="product_s_params">
+                                        <div class="product_s_params-item">
+                                            <span class="icon-maximize"></span>
+                                            <div class="product_s_params-value">053 х 10м</div>
+                                        </div>
+                                        <div class="product_s_params-item">
+                                            <span class="icon-membrane"></span>
+                                            <div class="product_s_params-value">Виниловые обои флизелиновая основа</div>
+                                        </div>
+                                    </div>
+                                    <div class="product_s_desc" itemprop="description">
+                                        <p>Краткое описание товара</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="collitems__item">
+                            <article class="box__type-3 offers__item" itemtype="https://schema.org/Product" itemprop="itemListElement" itemscope>
+                                <div class="product__wrapper">
+                                    <div class="product__stat sale">Sale</div>
+                                    <div class="product__label"><img src="/img/check_green.svg" alt="Складская программа">Складская программа</div>
+                                    <a href="/category/product.html" class="product__img img__thumb">
+                                        <img src="/img/product_1.jpg" alt="">
+                                    </a>
+                                    <div class="product__action">
+                                        <div class="product__action-box">
+                                            <div class="nav_favorite">
+                                                <a class="nav_favorite__link" href="#"><span class="icon-heart"></span></a>
+                                            </div>
+                                            <div class="nav_cart">
+                                                <a class="nav_cart__link" href="#"><span class="icon-shopping-bag"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="btn product__action-btn addToCart">Купить</div>
+                                    </div>
+                                </div>
+                                <div class="product__info">
+                                    <meta itemprop="image" content="/image/product.png">
+                                    <h3 itemprop="name">
+                                        <a href="/category/product.html" itemprop="url">Обои Galerie Metallic FX W78228</a>
+                                    </h3>
+                                    <div class="product-price" itemtype="https://schema.org/Offer" itemprop="offers" itemscope>
+                                        <span class="PricesalesPrice">$13.20</span>
+                                        <span class="PricesalesOldPrice">$56.20</span>
+                                        <meta itemprop="price" content="13.20">
+                                        <meta itemprop="priceCurrency" content="USD">
+                                    </div>
+                                    <div class="product_s_params">
+                                        <div class="product_s_params-item">
+                                            <span class="icon-maximize"></span>
+                                            <div class="product_s_params-value">053 х 10м</div>
+                                        </div>
+                                        <div class="product_s_params-item">
+                                            <span class="icon-membrane"></span>
+                                            <div class="product_s_params-value">Виниловые обои флизелиновая основа</div>
+                                        </div>
+                                    </div>
+                                    <div class="product_s_desc" itemprop="description">
+                                        <p>Краткое описание товара</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="collitems__item">
+                            <article class="box__type-3 offers__item" itemtype="https://schema.org/Product" itemprop="itemListElement" itemscope>
+                                <div class="product__wrapper">
+                                    <div class="product__stat sale">Sale</div>
+                                    <div class="product__label"><img src="/img/check_green.svg" alt="Складская программа">Складская программа</div>
+                                    <a href="/category/product.html" class="product__img img__thumb">
+                                        <img src="/img/product_1.jpg" alt="">
+                                    </a>
+                                    <div class="product__action">
+                                        <div class="product__action-box">
+                                            <div class="nav_favorite">
+                                                <a class="nav_favorite__link" href="#"><span class="icon-heart"></span></a>
+                                            </div>
+                                            <div class="nav_cart">
+                                                <a class="nav_cart__link" href="#"><span class="icon-shopping-bag"></span></a>
+                                            </div>
+                                        </div>
+                                        <div class="btn product__action-btn addToCart">Купить</div>
+                                    </div>
+                                </div>
+                                <div class="product__info">
+                                    <meta itemprop="image" content="/image/product.png">
+                                    <h3 itemprop="name">
+                                        <a href="/category/product.html" itemprop="url">Обои Galerie Metallic FX W78228</a>
+                                    </h3>
+                                    <div class="product-price" itemtype="https://schema.org/Offer" itemprop="offers" itemscope>
+                                        <span class="PricesalesPrice">$13.20</span>
+                                        <span class="PricesalesOldPrice">$56.20</span>
+                                        <meta itemprop="price" content="13.20">
+                                        <meta itemprop="priceCurrency" content="USD">
+                                    </div>
+                                    <div class="product_s_params">
+                                        <div class="product_s_params-item">
+                                            <span class="icon-maximize"></span>
+                                            <div class="product_s_params-value">053 х 10м</div>
+                                        </div>
+                                        <div class="product_s_params-item">
+                                            <span class="icon-membrane"></span>
+                                            <div class="product_s_params-value">Виниловые обои флизелиновая основа</div>
+                                        </div>
+                                    </div>
+                                    <div class="product_s_desc" itemprop="description">
+                                        <p>Краткое описание товара</p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="collitems__pagination">
+                        <ul class="pagination">
+                            <li class="prev"><a href="#"><span class="icon-arrow_slider"></span></a></li>
+                            <li class="current"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><span>...</span></li>
+                            <li><a href="#">155</a></li>
+                            <li class="next"><a href="#"><span class="icon-arrow_slider"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="collitems__description">
+                        <div class="description__wrapper">
+                            <div class="description__text">
+                                <h2>Характеристика коллекции обоев Amsterdam mood</h2>
+                                <p>Обои немецких фабрик отличает как множество классических дизайнов, что понравится каждому настоящему ценителю этого стиля, так и оригинальные приемы, которые придутся по душе любителям современных течений в оформлении интерьера. Основными направлениями обоев из Германии являются наиболее популярные  востребованные стили:</p>
+                                <ul>
+                                    <li>Классика;</li>
+                                    <li>Модерн;</li>
+                                    <li>Лофт;</li>
+                                    <li>Романтизм;</li>
+                                    <li>Кантри;</li>
+                                </ul>
+                            </div>
+                            <div class="description__image">
+                                <img src="/img/concrete-house-during-day-2079234.jpg" alt="" class="responze" width="498" height="372">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="delivery_pink">
+            <div class='container'>
+                <div class="delivery_pink-title title">Доставка по всей Украине</div>
+                <div class="delivery_pink-wrapper">
+                    <ul class="delivery_pink-list">
+                        <li><a href="#">Чернигов</a></li>
+                        <li><a href="#">Волынь</a></li>
+                        <li><a href="#">Ровно</a></li>
+                        <li><a href="#">Ивано - Франковск</a></li>
+                        <li><a href="#">Житомир</a></li>
+                        <li><a href="#">Киев</a></li>
+                        <li><a href="#">Харьков</a></li>
+                        <li><a href="#">Полтава</a></li>
+                        <li><a href="#">Хмельницкий</a></li>
+                        <li><a href="#">Луганск</a></li>
+                        <li><a href="#">Кировоград</a></li>
+                        <li><a href="#">Сумы</a></li>
+                        <li><a href="#">Черкассы</a></li>
+                        <li><a href="#">Тернополь</a></li>
+                        <li><a href="#">Винница</a></li>
+                        <li><a href="#">Львов</a></li>
+                        <li><a href="#">Закарпатье</a></li>
+                        <li><a href="#">Днепр</a></li>
+                        <li><a href="#">Донецк</a></li>
+                        <li><a href="#">Николаев</a></li>
+                        <li><a href="#">Запорожье</a></li>
+                        <li><a href="#">Херсон</a></li>
+                        <li><a href="#">Одесса</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--footer.html-->
+    <%= _.template(require('../includes/common/footer.html').default)({}) %>
+    <link as="style" href="/vendors/swiper/swiper-bundle.min.css" rel="prefetch">
+    <link href="/vendors/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link as="script" href="/vendors/swiper/swiper-bundle.min.js" rel="prefetch">
+    <script src="/vendors/swiper/swiper-bundle.min.js"></script>
+    <link as="script" href="/vendors/swiper/swiper.js" rel="prefetch">
+    <script src="/vendors/swiper/swiper.js"></script>
+</div>
+</body>
+</html>

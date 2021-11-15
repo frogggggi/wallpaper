@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="HTML5 webpack boilerplate" />
+    <title>HTML5 webpack boilerplate</title>
+    <link rel="stylesheet" href="/vendors/normalize-css/normalize.min.css" />
+    <link rel="stylesheet" href="/vendors/icomoon/style.css" />
+    <script>
+        if (!window.HTMLPictureElement) {
+            document.createElement('picture');
+        }
+    </script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body class="garanty-page">
+<div class="wrapper nocontent">
+    <!--header.html-->
+    <%= _.template(require('../includes/common/header.html').default)({version: htmlWebpackPlugin.options.custom.version,}) %>
+    <main class='main_content'>
+        <section class="text_section">
+            <div class='container'>
+                <h1 class="text_section-title title">Гарантии</h1>
+                <div class="text_section-wrapper">
+                    <h2>На все товары, приобретенные в Обои Люкс, предоставляется гарантия, дающая право на:</h2>
+                    <ul>
+                        <li>обмен или возврат товара в срок до 14 дней с момента приобретения;</li>
+                        <li>обмен или возврат товара на основании акта, выданного Авторизованным сервисным центром по результатам гарантийного обслуживания (в соответствии с Законом Украины «О защите прав потребителей»).</li>
+                    </ul>
+                    <h2>Подготовьте, пожалуйста, все необходимые документы:</h2>
+                    <ul>
+                        <li>выданный продавцом расчетный документ (чек / акт приема-передачи / накладная или др.), подтверждающий факт приобретения;</li>
+                        <li>гарантийный талон;</li>
+                        <li>документ, удостоверяющий личность;</li>
+                        <li>идентификационный налоговый номер (ИНН);</li>
+                        <li>в случае оплаты покупки банковской картой – актуальные реквизиты карточного счета.</li>
+                    </ul>
+                    <h2>Передайте товар на гарантийное обслуживание, обязательно приложите указанные выше документы.</h2>
+                    <p>Полезная информация о правах потребителя в случае приобретения им товара ненадлежащего качества – статья 8
+                        <a href="#">Закона Украины «О защите прав потребителей».</a></p>
+                    <p>Уважаемый покупатель, приносим извинения за неудобства, случившиеся в связи с выходом из строя. По вашему обращению будут приняты все меры для быстрого решения вашей проблемы.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--footer.html-->
+    <%= _.template(require('../includes/common/footer.html').default)({}) %>
+    <link as="style" href="/vendors/swiper/swiper-bundle.min.css" rel="prefetch">
+    <link href="/vendors/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link as="script" href="/vendors/swiper/swiper-bundle.min.js" rel="prefetch">
+    <script src="/vendors/swiper/swiper-bundle.min.js"></script>
+    <link as="script" href="/vendors/swiper/swiper.js" rel="prefetch">
+    <script src="/vendors/swiper/swiper.js"></script>
+</div>
+</body>
+</html>

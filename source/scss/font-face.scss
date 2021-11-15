@@ -1,0 +1,31 @@
+/* Добавьте сюда все @font-face, которые будут использоваться в проекте  */
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
+  url("../fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Root UI';
+    src: url('../fonts/PTRootUI-Medium.woff2') format('woff2'),
+        url('../fonts/PTRootUI-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+  font-family: 'Baltica';
+  src: url('../fonts/subset-Baltica.eot');
+  src: url('../fonts/subset-Baltica.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/subset-Baltica.woff2') format('woff2'),
+  url('../fonts/subset-Baltica.woff') format('woff'),
+  url('../fonts/subset-Baltica.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
